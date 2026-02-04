@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="src/all.min.css">
+</head>
+<body>
+   
+    <div class="bg-[#262626] w-[900px]  mx-auto p-5 ">
+<h4 class="text-[24px] text-white font-semibold text-center  ">My Todos</h4>
+<div class="bg-[#3D3D3D] w-full  p-5 mt-5">
+<div class="flex justify-between">
+    <div class="">
+        <h4 class="text-[18px] text-white font-semibold">Titel</h4>
+        <input id="inputOne" type="text" placeholder="What's The Titel Of Your Todo ?" class="bg-white w-[350px] h-10 text-gray-500 font-medium  p-3 focus:outline-none placeholder:font-medium placeholder:text-[#3D3D3D]">
+    </div>
+    <div class="">
+        <h4 class="text-[18px] text-white font-semibold">Descripiton</h4>
+        <input id="inputTwo" type="text" placeholder="What's The Descripiton Of Your Todo ?" class="bg-white w-[350px] h-10 p-3 text-gray-500 font-medium  focus:outline-none placeholder:font-medium placeholder:text-[#3D3D3D]">
+    </div>
+    <div class="">
+        <button id="addButton" class="px-4 py-2 rounded-lg bg-blue-600 text-[18px] font-semibold text-white mt-[25px]">Add</button>
+    </div>
+</div>
+<h5 id="errorOne" class="w-full py-2 bg-red-700 text-center text-[18px] font-medium text-white mt-3 hidden">Please Fill The Input Box </h5>
+<div class="h-[2px] w-full bg-[#5E686D] mt-[30px]"></div>
+
+<div class="mt-6">
+    <button id="buttonOne" class="px-4 py-2 rounded-lg bg-[#B4B4B8] text-[18px] font-semibold text-white focus:bg-green-500">To Do</button>
+    <button id="buttonTwo" class="px-4 py-2 rounded-lg bg-[#B4B4B8] text-[18px] font-semibold text-white focus:bg-green-500">Completed</button>
+</div>
+
+<div id="mainDivone" class="w-full">
+
+</div>
+
+<div id="mainDivTwo" class="hidden w-full ">
+  
+</div>
+
+</div>
+
+
+
+
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
