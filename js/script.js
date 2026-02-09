@@ -63,3 +63,29 @@ buttonTwo.addEventListener("click", () => {
     mainDivTwo.classList.remove("hidden");
     mainDivone.classList.add("hidden");
 });
+
+
+let CounterUp=document.querySelectorAll(".CounterUp")
+let arr=Array.from(CounterUp)
+
+arr.map((item)=>{
+  let counter=0
+
+function count(){
+  counter++;
+  item.innerHTML = counter
+  if(counter==item.dataset.number){
+clearInterval(stop)
+
+  }
+}
+  
+
+let stop=setInterval(function () {
+    count();
+    
+  },1000 / item.dataset.number);
+
+
+
+});
